@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.backend.mapper.UserMapper">
+<mapper namespace="com.books.mapper.UserMapper">
   
   <insert id="save" useGeneratedKeys="true" keyProperty="userId" keyColumn="id">
     INSERT INTO user (nickname, password, email, phone, isAdmin)
@@ -14,26 +14,26 @@
     WHERE nickname = #{nickname}
   </select>
 
-  <select id="getByUserId" parameterType="long" resultType="com.backend.model.UserModel">
+  <select id="getByUserId" parameterType="long" resultType="com.books.model.UserModel">
     SELECT *
     FROM user
     WHERE user_id = #{userId}
   </select>
 
-  <select id="getByNickname" parameterType="string" resultType="com.backend.model.UserModel">
+  <select id="getByNickname" parameterType="string" resultType="com.books.model.UserModel">
     SELECT *
     FROM user
     WHERE nickname = #{nickname}
   </select>
 
-  <select id="login" parameterType="com.backend.vo.LoginForm" resultType="com.backend.model.UserModel">
+  <select id="login" parameterType="com.books.vo.LoginForm" resultType="com.books.model.UserModel">
     SELECT *
     FROM user
     WHERE nickname = #{nickname}
     AND password = #{password}
   </select>
 
-  <update id="update" parameterType="com.backend.model.UserModel">
+  <update id="update" parameterType="com.books.model.UserModel">
     UPDATE user
     SET nickname = #{nickname}, password = #{password}, email = #{email}, phone = #{phone}, isAdmin = #{isAdmin}
     WHERE user_id = #{userId}
@@ -44,7 +44,7 @@
     WHERE user_id = #{userId}
   </delete>
 
-  <select id="getAllUsers" resultType="com.backend.model.UserModel">
+  <select id="getAllUsers" resultType="com.books.model.UserModel">
     SELECT *
     FROM user
   </select>

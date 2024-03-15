@@ -1,7 +1,7 @@
 package com.books.config;
 
-import com.backend.model.LoanModel;
-import com.backend.mapper.LoanMapper;
+import com.books.model.LoanModel;
+import com.books.mapper.LoanMapper;
 import java.time.LocalDateTime;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

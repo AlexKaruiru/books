@@ -1,7 +1,7 @@
 package com.books.mapper;
 
-import com.backend.model.BlogModel;
-import com.backend.model.CommentModel;
+import com.books.model.BlogModel;
+import com.books.model.CommentModel;
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 

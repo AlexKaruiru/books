@@ -1,7 +1,7 @@
 package com.books.controller;
 
-import com.backend.model.LoanHistoryModel;
-import com.backend.service.LoanService;
+import com.books.model.LoanHistoryModel;
+import com.books.service.LoanService;
 import io.swagger.v3.oas.annotations.Operation;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

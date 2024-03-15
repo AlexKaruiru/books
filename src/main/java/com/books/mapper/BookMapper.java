@@ -1,6 +1,6 @@
 package com.books.mapper;
 
-import com.backend.model.BookModel;
+import com.books.model.BookModel;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 

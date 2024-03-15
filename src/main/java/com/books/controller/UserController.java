@@ -1,8 +1,8 @@
 package com.books.controller;
 
-import com.backend.model.UserModel;
-import com.backend.service.UserService;
-import com.backend.vo.LoginForm;
+import com.books.model.UserModel;
+import com.books.service.UserService;
+import com.books.vo.LoginForm;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

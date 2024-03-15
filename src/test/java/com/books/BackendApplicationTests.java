@@ -1,12 +1,12 @@
 package com.books;
 
-/*package com.backend;
+/*package com.books;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendApplicationTests {
+class booksApplicationTests {
 
 @Test
 void contextLoads() {

@@ -1,8 +1,8 @@
 package com.books.controller;
 
-import com.backend.model.BlogModel;
-import com.backend.model.CommentModel;
-import com.backend.service.BlogService;
+import com.books.model.BlogModel;
+import com.books.model.CommentModel;
+import com.books.service.BlogService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

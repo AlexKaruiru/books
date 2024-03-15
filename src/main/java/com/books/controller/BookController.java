@@ -1,7 +1,7 @@
 package com.books.controller;
 
-import com.backend.model.BookModel;
-import com.backend.service.BookService;
+import com.books.model.BookModel;
+import com.books.service.BookService;
 import io.swagger.v3.oas.annotations.Operation;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

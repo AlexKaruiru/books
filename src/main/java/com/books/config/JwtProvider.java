@@ -1,6 +1,6 @@
 package com.books.config;
 
-import com.backend.vo.UserVo;
+import com.books.vo.UserVo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;

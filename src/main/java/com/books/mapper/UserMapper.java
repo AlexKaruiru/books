@@ -1,7 +1,7 @@
 package com.books.mapper;
 
-import com.backend.model.UserModel;
-import com.backend.vo.LoginForm;
+import com.books.model.UserModel;
+import com.books.vo.LoginForm;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,11 +1,11 @@
 package com.books.service;
 
-import com.backend.config.JwtProvider;
-import com.backend.model.LoanModel;
-import com.backend.model.LoanHistoryModel;
-import com.backend.mapper.BookMapper;
-import com.backend.mapper.LoanMapper;
-import com.backend.vo.UserVo;
+import com.books.config.JwtProvider;
+import com.books.model.LoanModel;
+import com.books.model.LoanHistoryModel;
+import com.books.mapper.BookMapper;
+import com.books.mapper.LoanMapper;
+import com.books.vo.UserVo;
 import java.time.LocalDateTime;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

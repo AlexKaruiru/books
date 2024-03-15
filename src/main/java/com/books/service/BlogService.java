@@ -1,10 +1,10 @@
 package com.books.service;
 
-import com.backend.config.JwtProvider;
-import com.backend.mapper.BlogMapper;
-import com.backend.model.BlogModel;
-import com.backend.model.CommentModel;
-import com.backend.vo.UserVo;
+import com.books.config.JwtProvider;
+import com.books.mapper.BlogMapper;
+import com.books.model.BlogModel;
+import com.books.model.CommentModel;
+import com.books.vo.UserVo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

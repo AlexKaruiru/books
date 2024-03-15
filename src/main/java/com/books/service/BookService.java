@@ -1,11 +1,11 @@
 package com.books.service;
 
-import com.backend.config.JwtProvider;
-import com.backend.model.BookModel;
-import com.backend.model.UserModel;
-import com.backend.mapper.BookMapper;
-import com.backend.mapper.UserMapper;
-import com.backend.vo.UserVo;
+import com.books.config.JwtProvider;
+import com.books.model.BookModel;
+import com.books.model.UserModel;
+import com.books.mapper.BookMapper;
+import com.books.mapper.UserMapper;
+import com.books.vo.UserVo;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
