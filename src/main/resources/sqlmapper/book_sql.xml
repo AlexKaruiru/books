@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woojkk.bookmanagement.mapper.BookMapper">
+  <insert id="saveBook" useGeneratedKeys="true" keyProperty="bookId" keyColumn="id">
+    insert into book (book_name, author, genre, publication_year)
+    values (#{bookName}, #{author}, #{genre}, #{publicationYear})
+  </insert>
+
+  <select id="findByAuthorAndBookName" resultType="int">
+    select count(*)
+    from book
+    where author = #{author}
+    and book_name = #{bookName}
+  </select>
+
+  <update id="updateBook">
+    update book
+    set book_name = #{bookName},
+        author = #{author},
+        genre = #{genre},
+        publication_year = #{publicationYear}
+    where book_id = #{bookId}
+  </update>
+
+  <delete id="deleteBook">
+    delete from book
+    where book_id = #{bookId}
+  </delete>
+
+  <select id="findAllBook">
+    select *
+    from book
+    order by book_name
+  </select>
+
+  <select id="findBook">
+    select count(*)
+    from book
+    where book_id = #{bookId}
+  </select>
+</mapper>

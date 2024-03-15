@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woojkk.bookmanagement.mapper.LoanMapper">
+  <insert id="loanBook" useGeneratedKeys="true" keyProperty="bookId" keyColumn="id">
+    insert into loan (loan_id, user_id, book_id, loan_date, return_date, state)
+    values (#{loanId}, #{userId}, #{bookId}, #{loanDate}, #{returnDate}, #{state})
+  </insert>
+
+  <select id="findAllLoan" resultType="com.woojkk.bookmanagement.dto.LoanDto">
+    select *
+    from loan
+  </select>
+
+  <update id="returnBook">
+    update loan
+    set state = false
+    where book_id = #{bookId}
+    and user_id = #{userId}
+  </update>
+
+  <select id="checkState">
+    select state
+    from loan
+    where book_id = #{bookId}
+      and user_id = #{userId}
+  </select>
+
+  <select id="loanHistory" resultType="com.woojkk.bookmanagement.dto.LoanHistoryDto">
+    select l.user_id, b.book_name, b.author, b.genre, l.loan_date, l.return_date, l.state
+    from loan l
+    left join book b on l.book_id = b.book_id
+    where b.book_id = #{bookId}
+    order by l.loan_date
+    limit 10;
+  </select>
+</mapper>
